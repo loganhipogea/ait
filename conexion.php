@@ -25,7 +25,7 @@ echo "Connected successfully";
      
   $sql = "SELECT id FROM TEMATICAS";
 
-  $datos = mysqli_query($conexion, $sql);
+  $datos = mysqli_query($conn, $sql);
   $arrayDatos = mysqli_fetch_array($datos);
 
   print_r ($arrayDatos);
