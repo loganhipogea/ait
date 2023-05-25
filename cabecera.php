@@ -147,9 +147,7 @@ var sp_offanimation = 'default';
                                 </a>
                          <!--INICIO DEL MENU -->
 			 <ul class="sp-megamenu-parent menu-slide-down hidden-sm hidden-xs">
-                                    <li class="sp-menu-item current-item active">
-                                        <a  href="/"  >Home</a>
-                                    </li>
+                                    
                                   <!-- INICIO PRIMERA OPCION -->
                                     <li class="sp-menu-item sp-has-child">
                                         <a  href="javascript:void(0);"  >
@@ -203,7 +201,7 @@ var sp_offanimation = 'default';
                                     <!-- INICIO SEGUNDA OPCION -->
                                    <li class="sp-menu-item sp-has-child">
                                     <a  href="javascript:void(0);"  >
-                                        Linea Industrial
+                                        Proyectos
                                     </a>
                                     <!-- INICIO HIJOS SEGUNDA OPCION -->   
                                     <div class="sp-dropdown sp-dropdown-main sp-menu-right" style="width: 240px;">
@@ -248,16 +246,8 @@ var sp_offanimation = 'default';
                                             Contacto
                                         </a>
                                     </li>
-                                  <li class="sp-menu-item">
-                                      <a  href="/productos-para-la-industria.pdf" rel="noopener noreferrer" target="_blank" >
-                                          Catalogo 2022
-                                      </a>
-                                  </li>
-                                  <li class="sp-menu-item">
-                                       <a  href="/noticias"  >
-                                           Noticias
-                                       </a>
-                                  </li>
+                                  
+                                 
                         </ul>	
                          <!--FIN DEL MENU PPAL -->
            </div>
