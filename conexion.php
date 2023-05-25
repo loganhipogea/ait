@@ -7,13 +7,7 @@ $password = "toxoplasma1";
 $conn = mysqli_connect($servername, $username, $password, $database);
 
       
-  $sql = "select *from almacenes";
-
-  $datos = mysqli_query($conn, $sql);
-  $arrayDatos = mysqli_fetch_array($datos);
-
-  print_r ($arrayDatos);
-
+  
 
 
 // Check connection
@@ -22,13 +16,13 @@ if (!$conn) {
 }
 echo "Connected successfully";
 
-     
-  $sql = "SELECT id FROM TEMATICAS";
+  $sql = "select *from almacenes";
 
   $datos = mysqli_query($conn, $sql);
   $arrayDatos = mysqli_fetch_array($datos);
 
   print_r ($arrayDatos);
+
 mysqli_close($conn);
 ?>
 
