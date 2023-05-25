@@ -21,11 +21,8 @@ if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }
 echo "Connected successfully";
-$conexion = mysqli_connect($servername, $usuario, $contrasena) or die("No se ha podido conectar con el servidor");
 
-        //CREAMOS LA CONEXIÓN CON LA BASE DE DATOS QUE SE ALMACENARÁ EN $db
-        $db = mysqli_select_db($conexion, $database) or die("No se ha podido conectar con la base de datos");
-
+     
   $sql = "SELECT id FROM TEMATICAS";
 
   $datos = mysqli_query($conexion, $sql);
