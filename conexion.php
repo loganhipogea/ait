@@ -19,9 +19,14 @@ echo "Connected successfully";
   $sql = "select *from almacenes";
 
   $datos = mysqli_query($conn, $sql);
-  $arrayDatos = mysqli_fetch_array($datos);
+   $arrayDatos = array();
 
+  while($row = mysqli_fetch_array($datos)){
+    $arrayDatos[] = $row;
+  }
   print_r ($arrayDatos);
+
+
 
 mysqli_close($conn);
 ?>
