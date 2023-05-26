@@ -10,9 +10,7 @@
 	<meta name="description" content="Importadores y distribuidores de Mangueras Jebe y Lona,Mangueras Industriales,Hidraulicas,conexiones de fluídos,Mangueras Metalicas Flexibles,Junta de Expansion,Juntas Antisismicas,Conexiones Sanitarias,Fajas Transportadoras, Fajas Sanitarias para Alimentos" />
 	<meta name="generator" content="Joomla! - Open Source Content Management" />
 	<title><?=$valores['empresa']?></title>
-	<link href="https://www.acorsaperu.com/component/search/?id=9&amp;Itemid=437&amp;format=opensearch" rel="search" title="Buscar Acorsa Perú Industrias y Soluciones tales como Pesquera, Minera, Agrícola, Petroquimica" type="application/opensearchdescription+xml" />
-	<link href="/images/ACORSA.png" rel="shortcut icon" type="image/vnd.microsoft.icon" />
-	
+	 <link href="images/logo_atpumps.svg" rel="icon">
         <link href="css/animate.min.css" rel="stylesheet" type="text/css" />
         <link href="css/spaggebuilder.css" rel="stylesheet" type="text/css" />
         <link href="css/spaggecontainer.css" rel="stylesheet" type="text/css" />
@@ -196,12 +194,55 @@ var sp_offanimation = 'default';
                                          <!-- FIN HIJOS DE PRIMERA OPCION -->
                                     </li>
                                      <!-- FIN PRIMERA OPCION -->
-                                    
+                                  <!-- INICIO SEGUNDA OPCION -->
+                                    <li class="sp-menu-item sp-has-child">
+                                        <a  href="javascript:void(0);"  >
+                                            Servicios
+                                        </a>
+                                        <!-- INICIO HIJOS DE PRIMERA OPCION -->
+                                        <div class="sp-dropdown sp-dropdown-main sp-menu-right" style="width: 240px;">
+                                          <div class="sp-dropdown-inner">
+                                              <ul class="sp-dropdown-items">
+                                                  <li class="sp-menu-item">
+                                                      <a  href="/productos/mangueras-industriales"  >
+                                                          Fabricación de tableros eléctricos
+                                                      </a>
+                                                  </li>
+                                                  <li class="sp-menu-item">
+                                                       <a  href="/productos/sistema-de-riego-tecnificado"  >
+                                                          Fabricación de flotadores
+                                                        </a>
+                                                   </li>
+                                                 
+                                                  <li class="sp-menu-item">
+                                                      <a  href="/productos/manguera-metalica-flexible"  >
+                                                          Recuperación de componentes de bombas
+                                                      </a>
+                                                  </li>
+                                                  <li class="sp-menu-item">
+                                                      <a  href="/productos/mangueras-hidraulicas"  >
+                                                          Rebobinado de motores eléctricos tipo H
+                                                      </a>
+                                                  </li>
+                                                  <li class="sp-menu-item">
+                                                    <a  href="/productos/fajas-industriales-en-v"  >
+                                                        Mantenimiento de generadores y grupos electrógenos
+                                                    </a>
+                                                  </li>
+                                                  
+                                                  
+                                                 
+                                              </ul>
+                                          </div>
+                                        </div>
+                                         <!-- FIN HIJOS DE PRIMERA OPCION -->
+                                    </li>
+                                     <!-- FIN PRIMERA OPCION -->  
                                      
-                                    <!-- INICIO SEGUNDA OPCION -->
+                                    <!-- INICIO TERCERA OPCION -->
                                    <li class="sp-menu-item sp-has-child">
                                     <a  href="javascript:void(0);"  >
-                                        Proyectos
+                                        Proyectos realizados
                                     </a>
                                     <!-- INICIO HIJOS SEGUNDA OPCION -->   
                                     <div class="sp-dropdown sp-dropdown-main sp-menu-right" style="width: 240px;">
