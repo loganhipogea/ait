@@ -17,7 +17,7 @@ $sql="select *from ait_contenidos where zona in ('TOP','COLUMNA') and activo='1'
 
 
 <?php 
- $sqlFooter="select *from ait_contenidos where zona='FOOTER' ";
+ $sqlFooter="select *from ait_contenidos where zona='FOOTER' and activo='1' ";
   $contenidoFooter=[];
       $datosFooter= mysqli_query($conn, $sqlFooter);
            while($filaFooter = mysqli_fetch_array($datosFooter)){
