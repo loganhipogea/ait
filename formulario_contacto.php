@@ -90,13 +90,15 @@
 		<div class="controls"><input type="email" name="email" class="validate-email required" id="jform_contact_email" value=""
  size="30"    autocomplete="email"    required aria-required="true"  /></div>
 </div>
-											<div class="control-group">
-			<div class="control-label">
-			<label id="jform_contact_emailmsg-lbl" for="jform_contact_emailmsg" class="hasPopover required" title="Asunto" data-content="Introduzca aquí el asunto de su mensaje.">
-	Asunto<span class="star">&#160;*</span></label>
-					</div>
-		<div class="controls"><input type="text" name="jform[contact_subject]" id="jform_contact_emailmsg"  value="" class="required" size="60"       required aria-required="true"      />
-</div>
+<div class="control-group">
+    <div class="control-label">
+		<label id="jform_contact_emailmsg-lbl" for="jform_contact_emailmsg" class="hasPopover required" title="Asunto" data-content="Introduzca aquí el asunto de su mensaje.">
+                   Asunto<span class="star">&#160;*</span>
+                </label>
+     </div>
+    <div class="controls">
+        <input type="text" name="asunto" id="jform_contact_emailmsg"  value="" class="required" size="60"       required aria-required="true"      />
+    </div>
 </div>
 											<div class="control-group">
 			<div class="control-label">
@@ -106,11 +108,7 @@
 		<div class="controls"><textarea name="mensaje" id="jform_contact_message"  cols="50"  rows="10" class="required"      required aria-required="true"     ></textarea></div>
 </div>
 											<div class="control-group">
-			<div class="control-label">
-			<label id="jform_contact_email_copy-lbl" for="jform_contact_email_copy" class="hasPopover" title="Envíeme una copia" data-content="Se enviará una copia del mensaje a la dirección de correo electrónico que haya proporcionado.">
-	Envíeme una copia</label>
-							<span class="optional">(opcional)</span>
-					</div>
+			
 		<div class="controls"><input type="checkbox" name="jform[contact_email_copy]" id="jform_contact_email_copy" value="1" /></div>
 </div>
 									</fieldset>
