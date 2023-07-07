@@ -141,14 +141,12 @@
     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
        <h3 style="text-align:left;">Visión</h3> 
        <DIV style="text-align:justify;font-size:0.9em !important;">
-           Ser proveedores de servicios especializados de electrobombas de la más alta calidad brindando una atención personalizada con profesionales altamente calificados y comprometidos en la satisfacción de nuestros clientes.
-       </DIV>
+           <?=$contenido['contenido_central.vision']['cuerpo']?> </DIV>
     </div>
     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
          <h3 style="text-align:left;">Misión</h3> 
         <DIV style="text-align:justify;font-size:0.9em !important;">
-           Llegar a ser una empresa de prestigio y curriculum empresarial intachable considerada dentro de las 5 mejores del país en el suministro de servicios especializados y soporte técnico de sistemas de bombeo y electrobombas.
-
+           <?=$contenido['contenido_central.mision']['cuerpo']?> 
        </DIV>
     </div>
 </div>
@@ -187,49 +185,27 @@
                                      </div>
                                  </div>
                             </div>
+                          
+                            
+                            
+                            <?php foreach($contenido_ColFrontal as $clave=>$filaCol){ ?>
+                            
                             <div id="sppb-addon-1545538620049" class="clearfix" >
                                 <div class="sppb-addon sppb-addon-single-image sppb-text-center ">
                                     <div class="sppb-addon-content">
                                         <div class="sppb-addon-single-image-container">
                                             <a target="_blank" href="http://www.acor">
-                                                <img class="sppb-img-responsive" src="images/lado1.png" alt="Image" title="">
+                                                <img class="sppb-img-responsive" src="<?=$filaCol['ruta']?>" alt="Image" title="">
                                             </a>
                                             <div style="font-size:0.8em;width:100%;text-align: center; position: absolute; top:75%; color:white;  ">
-                                                   Recovery components
+                                                   <?=$filaCol['titulo']?>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                     <?php } ?>
                             
-                            <div id="sppb-addon-1545538772701" class="clearfix" >
-                                    <div class="sppb-addon sppb-addon-single-image sppb-text-center ">
-                                        <div class="sppb-addon-content">
-                                            <div class="sppb-addon-single-image-container">
-                                                <a  href="/productos/correas-industriales">
-                                                    <img class="sppb-img-responsive" src="images/lado3.png" alt="Image" title="">
-                                                </a>
-                                                <div style="font-size:0.8em;width:100%;text-align: center; position: absolute; top:75%; color:white;  ">
-                                                   Mantenimiento de bombas Flygt BS
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                            </div>
-                            <div id="sppb-addon-1545538944615" class="clearfix" >
-                                <div class="sppb-addon sppb-addon-single-image sppb-text-center ">
-                                    <div class="sppb-addon-content">
-                                        <div class="sppb-addon-single-image-container">
-                                            <a  href="/linea-industrial/manguera-de-soldadura">
-                                                <img class="sppb-img-responsive" src="images/lado4.png" alt="Image" title="">
-                                            </a>
-                                            <div style="font-size:0.8em;width:100%;text-align: center; position: absolute; top:75%; color:white;  ">
-                                                   Reparación general de bombas
-                                             </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
                             
                      </div>
                  </div>

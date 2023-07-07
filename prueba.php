@@ -26,9 +26,15 @@
            } 
            
            
+    
            
-   /*Obteniendo las fotos de la columna */
-          $sqlCol="select *from ait_columnas where contenido_id=".$idcontenido;
+           
+   
+  ?>
+    
+    <?php     
+   /*Obteniendo las fotos de la columna de los contenidos  */
+          $sqlCol="select *from ait_columnas where frontal <> '1' and contenido_id=".$idcontenido;
 //var_dump($sqlCol);die();
          $contenido_Col=[];
         $datosCol= mysqli_query($conn, $sqlCol);
@@ -36,11 +42,9 @@
            while($filaCol= mysqli_fetch_array($datosCol)){
             $contenido_Col[]=$filaCol;
            } 
-       
-           
-           
-   
   ?>
+    
+    
     <body class="site com-sppagebuilder view-page no-layout no-task itemid-437 es-es ltr  sticky-header layout-fluid off-canvas-menu-init">
 
        
@@ -145,14 +149,7 @@
         </p>
                     
         <?php } ?>
-        <p style="font-size: 12.16px;">
-            <div class="marcoimagen">
-                <a title="catalogo de productos " href="/productos-para-la-industria.pdf" target="_blank" rel="noopener noreferrer">
-                <img src="images/PIEZA.jpg" alt="" width="450" height="631" />
-                </a>
-                <div style="text-align: center; color:#f24d09" >Hola amiguitos</div>
-            </div>
-        </p>
+        
         
        
                 </div>
@@ -166,9 +163,7 @@
                     
                     </div>
                 </section>
-
-
-       
+    
            
    
 

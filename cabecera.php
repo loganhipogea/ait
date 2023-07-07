@@ -30,3 +30,18 @@ $sql="select *from ait_contenidos where zona in ('TOP','COLUMNA') and activo='1'
 
 
 ?>
+
+  
+
+
+<?php     
+   /*Obteniendo las fotos de la columna de los contenidos de la pagina frontal del index  */
+          $sqlColFrontal="select *from ait_columnas where frontal = '1' ";
+//var_dump($sqlCol);die();
+         $contenido_ColFrontal=[];
+        $datosColFrontal= mysqli_query($conn, $sqlColFrontal);
+ 
+           while($filaColFrontal= mysqli_fetch_array($datosColFrontal)){
+            $contenido_ColFrontal[]=$filaColFrontal;
+           } 
+  ?>    
