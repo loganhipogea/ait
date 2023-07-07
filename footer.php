@@ -1,14 +1,15 @@
+<?PHP  mysqli_close($conn); ?>
 <section id="sp-bottom">
     <div class="container">
         <div class="row">
             <div id="sp-bottom1" class="col-sm-6 col-md-3">
                 <div class="sp-column ">
                     <div class="sp-module ">
-                        <h3 class="sp-module-title">Dirección </h3>
+                        <h3 class="sp-module-title"><?=$contenidoFooter['footer.direcciones']['titulo']?> </h3>
                         <div class="sp-module-content">
 
                                 <div class="custom"  >
-                                        <p><?=$valores['direccion_fiscal']?><br /><?=$valores['empresa']?></p>
+                                        <p><?=$contenidoFooter['footer.direcciones']['cuerpo']?></p>
                                 </div>
                         </div>
                     </div>
@@ -17,11 +18,11 @@
             <div id="sp-bottom2" class="col-sm-6 col-md-3">
                 <div class="sp-column ">
                     <div class="sp-module ">
-                        <h3 class="sp-module-title">Correos</h3>
+                        <h3 class="sp-module-title"><?=$contenidoFooter['footer.correos']['titulo']?></h3>
                         <div class="sp-module-content">
 
                         <div class="custom"  >
-                        <p><a href="<?=$valores['correo_ventas']?>"</a><br /><a href="mailto:<?=$valores['correo_ventas']?>"><?=$valores['correo_ventas']?></a><br /><br /></p></div>
+                        <p><a href="<?=$contenidoFooter['footer.correos']['cuerpo']?>"</a><br /><a href="mailto:<?=$contenidoFooter['footer.correos']['cuerpo']?>"><?=$contenidoFooter['footer.correos']['cuerpo']?></a><br /><br /></p></div>
                         </div>
                     </div>
                 </div>
@@ -29,12 +30,12 @@
             <div id="sp-bottom3" class="col-sm-6 col-md-3">
                 <div class="sp-column ">
                     <div class="sp-module ">
-                        <h3 class="sp-module-title">Teléfonos </h3>
+                        <h3 class="sp-module-title"><?=$contenidoFooter['footer.telefonos']['titulo']?></h3>
                         <div class="sp-module-content">
 
                                 <div class="custom"  >
-                                        <p><span lang="EN-US">Tel: (511) 594-7417 (511) 792-7357&nbsp;&nbsp;</span><span lang="EN-US"><span style="text-decoration: underline;"><br /></span></span></p>
-                                        <p><span style="color: #1f497d;">994- 023780 | 961-786108 |977- 340790</span></p></div>
+                                   <?=$contenidoFooter['footer.telefonos']['cuerpo']?>    
+                                </div>
                         </div>
                     </div>
                 </div>
@@ -74,16 +75,7 @@
                 <div class="sp-column ">
                     <span class="sp-copyright">
                         <div class="container-fluid">
-	<div class="row">
-		<div class="col-md-6">
-		  <div align="left">Diseño web: <a href="https://procreativospw.com/diseno-web/" target="_blank" rel="nofollow" >Soluciones planweb</a> 
-		  </div>
-		</div>
-		<div class="col-md-6">
-		  <div align="left">Todos los derechos reservados acorsaperu.com
-		  </div>
-		</div>
-	</div>
+	
 </div>
 </span></div></div></div></div>
 </footer> 

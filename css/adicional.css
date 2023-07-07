@@ -301,3 +301,29 @@ td, th {
 #sp-header a:hover{color:#ffffff;}
 #sp-bottom{ background-color:#ededed;padding:20px 0px; }
 
+
+ .mititulo {
+  font-size: 70px;
+  font-weight: 600;
+  background-image: linear-gradient(to left, #553c9a, #b393d3);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.margenizquierdo {
+    border-style: dotted;
+    border-color:#ccc;
+    border-left-width: 1px;
+    border-right-width: 0px;
+    border-top-width: 0px;
+    border-bottom-width: 0px;
+}
+.marcoimagen{
+    padding: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color:#ccc;
+    border-radius: 8px;
+}
+

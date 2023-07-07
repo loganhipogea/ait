@@ -16,6 +16,7 @@
        'celular_3'=>'965342953',
       
   ];
+  include_once 'conexion.php';
 ?>
 
 <!DOCTYPE html>
@@ -23,6 +24,24 @@
   <?php
   
   include_once('cabecera.php');
+   include_once('cabecera2.php');
+  $sql="select *from ait_contenidos where zona='CUERPO' ";
+  $contenido=[];
+      $datos= mysqli_query($conn, $sql);
+           while($fila = mysqli_fetch_array($datos)){
+            $contenido[$fila['clave']]=$fila;
+           } 
+ 
+  $sql="select *from ait_contenidos where id=19 ";
+  $fila_slider=[];
+      $datosSlider= mysqli_query($conn, $sql);
+           while($fila = mysqli_fetch_array($datosSlider)){
+            $fila_slider[]=$fila;
+           }     
+          
+    $array_files_slider=json_decode($fila_slider[0]['adjuntos']);
+   //var_dump(json_decode($array_files_slider));die();
+     
   ?>
 
     <body class="site com-sppagebuilder view-page no-layout no-task itemid-437 es-es ltr  sticky-header layout-fluid off-canvas-menu-init">
@@ -63,10 +82,11 @@
                                                         <li data-sppb-target="#sppb-carousel-1545535182690"   data-sppb-slide-to="2"></li>
                                                         <li data-sppb-target="#sppb-carousel-1545535182690"   data-sppb-slide-to="3"></li>
                                                         
-                                                    </ol><div class="sppb-carousel-inner sppb-text-center">
-                                                        
+                                                    </ol>
+                                                   <div class="sppb-carousel-inner sppb-text-center">
+                                                        <?php foreach($array_files_slider as $key => $ruta){   ?>
                                                         <div class="sppb-item sppb-item-15455351826901  sppb-item-has-bg">
-                                                            <img src="images/sliders01.jpg" alt="">
+                                                            <img src="<?=$ruta?>" alt="">
                                                                 <div class="sppb-carousel-item-inner">
                                                                     <div class="sppb-carousel-caption">
                                                                         <div class="sppb-carousel-text">
@@ -75,24 +95,8 @@
                                                                     </div>                                                                        
                                                                 </div>                                                                    
                                                         </div>
-                                                        <div class="sppb-item sppb-item-15455351826902  sppb-item-has-bg">
-                                                            <img src="images/sliders02.jpg" alt="">
-                                                                <div class="sppb-carousel-item-inner">
-                                                                    <div class="sppb-carousel-caption">
-                                                                        <div class="sppb-carousel-text">                                                                            
-                                                                        </div>                                                                            
-                                                                    </div>                                                                        
-                                                                </div>                                                                    
-                                                        </div>
-                                                        <div class="sppb-item sppb-item-15455351826903  sppb-item-has-bg">
-                                                            <img src="images/sliders03.jpg" alt="">
-                                                                <div class="sppb-carousel-item-inner">
-                                                                    <div class="sppb-carousel-caption">
-                                                                        <div class="sppb-carousel-text">                                                                            
-                                                                        </div>                                                                            
-                                                                    </div>                                                                        
-                                                                </div>                                                                    
-                                                        </div>
+                                                        <?php } ?>
+                                                        
                                                                                                                    
                                                     </div>
                                             <a href="#sppb-carousel-1545535182690" class="sppb-carousel-arrow left sppb-carousel-control" data-slide="prev">
@@ -124,15 +128,11 @@
                                             <div class="sppb-addon-content">
 
 <div class="custom"  >
-	<h1 style="text-align: center;">A&T PUMPS TECHNOLOGY PERU  S.A.C.<br /><br /></h1>
+	<h1 style="text-align: center;"><?=$contenido['contenido_central.nombreempresa']['titulo']?><br /><br /></h1>
         <p>
-            <div style="text-align: justify;">Cuenta con la experiencia de más de 10 años con la aplicación  y comercialización 
-    de equipos de bombeo así como con  sus respectivos  accesorios en los sectores de: 
-    la minería, la agricultura, la agro-industria, abastecimiento de agua potable, manejo de aguas residuales, etc.
-La planta de trabajo se encuentra ubicado estratégicamente en el Callao, cerca del
-aeropuerto  y del puerto,  A&T PUMPS TECHNOLOGY PERU  S.A.C.  
-tiene una respuesta rápida y confiable a sus cotizaciones así como  a los requerimientos
-en  los sistemas de bombeo y proyectos que son complementarios a este.
+            <div style="text-align: justify;">
+                <?=$contenido['contenido_central.quienessoomos']['cuerpo']?>
+                
             </div>
         </p>
 
