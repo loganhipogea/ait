@@ -20,6 +20,7 @@ $cadena.='&mensaje='.urlencode($_POST['mensaje']);
    //curl_setopt($ch, CURLOPT_POSTFIELDS, $_POST);
    //curl_setopt($ch, CURLOPT_HEADER, 0);  
    $data = curl_exec($ch); 
+   var_dump($data); die();
    curl_close($ch); 
   header('Location:'.$rutaweb);
 ?>
