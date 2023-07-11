@@ -44,4 +44,29 @@ $sql="select *from ait_contenidos where zona in ('TOP','COLUMNA') and activo='1'
            while($filaColFrontal= mysqli_fetch_array($datosColFrontal)){
             $contenido_ColFrontal[]=$filaColFrontal;
            } 
-  ?>    
+  
+
+
+
+
+/*
+ * Obteniendo los menus y submensu
+ */
+  $sql = "select id,valor,url,parent_id, tiene_hijos from ait_menus where activo='1' and parent_id IS NULL OR parent_id = '' order by orden asc";
+  $datos = mysqli_query($conn, $sql);
+   $array_menus_padre = array();
+   $array_menus_hijos=[];
+  while($row = mysqli_fetch_array($datos)){
+    $array_menus_padre[$row['id']] = $row;
+         $clave=$array_menus_padre[$row['id']]['id'];
+         $sql="select id,valor,url from ait_menus where activo='1' and parent_id =".$clave."";
+         
+         $datos_aux = mysqli_query($conn, $sql);
+           while($fila = mysqli_fetch_array($datos_aux)){
+             $array_menus_hijos[$clave][]=$fila;
+           } 
+    } 
+    
+  //print_r($array_menus_hijos);die();  
+ 
+      ?>  
