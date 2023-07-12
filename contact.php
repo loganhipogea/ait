@@ -6,7 +6,7 @@ include('cabecera.php');
 $ruta=$contenido['ruta']['titulo'];
 $rutaweb=$contenido['rutaweb']['titulo'];
 $cadena='?nombre='.urlencode($_POST['nombre']);
-$cadena='?nombre='.urlencode($_POST['asunto']);
+
 if(array_key_exists('telefono',$_POST)){
   $cadena.='&telefono='.urlencode($_POST['telefono']);  
 }
