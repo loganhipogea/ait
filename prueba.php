@@ -78,7 +78,7 @@
                                             Manguera para Pulpa Mineral	
                                          </h2>
                                         </div>
-                                        <div itemprop="articleBody">
+                                        <div itemprop="articleBody" style="text-align: justify">
                                           <!--TU CONTENIDO AQUÍ -->
                                           <?=$contenido_['cuerpo']?>
                                           <!--FIN DE TU CONTENIDO -->

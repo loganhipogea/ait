@@ -27,6 +27,6 @@ $cadena.='&mensaje='.urlencode($_POST['mensaje']);
    $data = curl_exec($ch); 
    
    curl_close($ch); 
-   echo $rutaweb; die();
+   
   header('Location:'.$rutaweb);
 ?>
