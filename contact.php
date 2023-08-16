@@ -1,6 +1,4 @@
 <?php 
-
-
 include('conexion.php');
 include('cabecera.php');
 $ruta=$contenido['ruta']['titulo'];
@@ -29,5 +27,6 @@ $cadena.='&mensaje='.urlencode($_POST['mensaje']);
    $data = curl_exec($ch); 
    
    curl_close($ch); 
+   echo $rutaweb; die();
   header('Location:'.$rutaweb);
 ?>

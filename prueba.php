@@ -34,7 +34,7 @@
     
     <?php     
    /*Obteniendo las fotos de la columna de los contenidos  */
-          $sqlCol="select *from ait_columnas where frontal <> '1' and activo='1' and contenido_id=".$idcontenido;
+          $sqlCol="select *from ait_columnas where frontal <> '1' and activo='1' ";
 //var_dump($sqlCol);die();
          $contenido_Col=[];
         $datosCol= mysqli_query($conn, $sqlCol);
